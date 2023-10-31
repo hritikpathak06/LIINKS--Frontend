@@ -1,0 +1,101 @@
+.main_container{
+    height: 80vh;
+    /* background-color: orange !important; */
+    display: flex;
+    border-top: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_container{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.left_container > h1{
+    font-size: 5rem;
+    font-weight: bolder;
+    text-align: start;
+    margin-left: 2rem;
+}
+
+.left_container > p{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    align-items: start;
+    margin-left: 2rem;
+}
+
+.left_container > form {
+    width: 50% !important;
+    background-color: green;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 33px;
+    border: 1px solid black;
+    border-bottom: 4px solid black;
+    outline: none !important;
+}
+
+.left_container > form > input{
+    width: 100% !important;
+    background-color: white;
+    border: none;
+    outline: none !important;
+}
+
+.left_container > form-control{
+  outline: none !important;
+}
+
+
+.left_container > form > button{
+    background-color: black;
+    color: white;
+    width: 40%;
+    border-radius: 33px;
+    padding: 0.4rem;
+}
+
+
+.right_container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background-color: orange; */
+}
+
+.right_container > img{
+    width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  .main_container{
+    flex-direction: column;
+  }
+
+  .left_container {
+    width: 100%;
+  }
+
+  .left_container > h1{
+    /* align-items: center; */
+    font-size: 2rem;
+  }
+
+  .left_container > form{
+    width: 100vw;
+    padding: .5rem;
+  }
+
+  .right_container {
+    width: 100%;
+  }
+}

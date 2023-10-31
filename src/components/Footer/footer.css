@@ -1,0 +1,119 @@
+.footer{
+    height: 100vh;
+    width: 100%;
+    /* background-color: black; */
+}
+
+.first_div{
+    width: 100%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.772);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first_div > h1{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.first_div > form{
+    background-color:white;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: .7rem;
+    margin-bottom: 1.3rem;
+}
+
+.first_div > form > input{
+    width: 67%;
+    padding: .6rem;
+    border: none;
+    outline: none;
+}
+
+.first_div > form > button{
+    border: none;
+    color: white;
+    background-color: blue;
+    padding: .6rem 1rem;
+    width: 30%;
+    color: white;
+    height: 100%;
+}
+
+.second_div{
+    background-color: black;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.second_div > h1{
+    font-size: 5rem;
+}
+.second_div > ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    color: beige;
+}
+.second_div > ul > li{
+    margin-left: 1rem;
+}
+
+.third_div{
+    background-color:black;
+    height: 40%;
+    width: 100%;
+    border-top: 0.2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.third_div > p{
+    color: white;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        height: 100%;
+        width: 100%;
+    }
+    .first_div{
+        width: 100%;
+    }
+    .first_div > h1{
+        margin-top: 1rem;
+    }
+    .first_div > form{
+        width: 90%;
+        padding: .3rem;
+    }
+    .second_div{
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .second_div > h1{
+        font-size: 2rem;
+        text-align: center;
+        margin: auto;
+    }
+    .second_div > ul{
+        width: 100%;
+    }
+    .second_div > ul > li{
+        width: 100%;
+        font-size: .8rem;
+    }
+    .third_div > p{
+        font-size: .7rem;
+    }
+}
