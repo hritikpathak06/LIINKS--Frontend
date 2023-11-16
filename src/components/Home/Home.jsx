@@ -12,6 +12,7 @@ const Home = () => {
             place. Create a page that matches your style and never worry about
             changing your bio link again
           </p>
+          <h2>Hello wolrd</h2>
           <form className="d-flex" role="search">
             <input
               className="form-control me-2"
